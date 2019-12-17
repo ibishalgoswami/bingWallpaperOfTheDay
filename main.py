@@ -6,7 +6,6 @@ url="https://bing.wallpaper.pics/"
 r=requests.get(url)
 html_content=r.content
 soup=BeautifulSoup(html_content,'html.parser')
-
 all_images=soup.find_all('img')
 images_con=[]
 for i in all_images:
